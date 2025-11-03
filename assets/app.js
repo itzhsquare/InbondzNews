@@ -3,6 +3,9 @@ const searchKey = document.createElement('input');
 const mainNewsValue = document.querySelectorAll('h1');
 const button = document.createElement('button');
 const buttonSearch = document.getElementById('button-search');
+const buttonHome = document.getElementById('button-home');
+const buttonTc = document.getElementById('button-tc');
+const buttonAbout = document.getElementById('button-about');
 
 
 
@@ -49,7 +52,7 @@ function searchNews() {
 
 
             if (found) {
-                alert("✅ Data is found!");
+                
                 window.location.href = `https://www.google.com/search?q=${matchedItem.news}`;
 
             }
@@ -92,3 +95,7 @@ tabs.forEach(tab => {
 
 
 });
+
+ buttonAbout.addEventListener('click' , ()=>{
+    window.location.href = 'About.html'
+ })
