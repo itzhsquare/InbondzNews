@@ -19,6 +19,7 @@ search.addEventListener('click', () => {
     searchKey.focus();
     search.appendChild(button);
 });
+
 buttonSearch.addEventListener('click', () => {
     search.appendChild(searchKey);
 
