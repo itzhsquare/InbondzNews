@@ -62,7 +62,7 @@ button.addEventListener('click', () => {
     searchNews();
 });
 buttonSearch.addEventListener('click', () => {
-
+    searchKey.focus();
 
     searchNews();
 });
