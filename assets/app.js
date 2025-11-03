@@ -2,6 +2,8 @@ const search = document.getElementById('search');
 const searchKey = document.createElement('input');
 const mainNewsValue = document.querySelectorAll('h1');
 const button = document.createElement('button');
+const buttonSearch = document.getElementById('button-search');
+
 
 
 
@@ -55,7 +57,12 @@ function searchNews() {
 
 
 button.addEventListener('click', () => {
-    console.log("me as a hacker ");
+
+
+    searchNews();
+});
+buttonSearch.addEventListener('click', () => {
+
 
     searchNews();
 });
@@ -79,6 +86,6 @@ tabs.forEach(tab => {
 
 
     });
-   
+
 
 });
