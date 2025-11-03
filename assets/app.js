@@ -19,6 +19,12 @@ search.addEventListener('click', () => {
     searchKey.focus();
     search.appendChild(button);
 });
+buttonSearch.addEventListener('click', () => {
+    search.appendChild(searchKey);
+
+    searchKey.focus();
+    search.appendChild(button);
+});
 
 function searchNews() {
 
@@ -61,11 +67,7 @@ button.addEventListener('click', () => {
 
     searchNews();
 });
-buttonSearch.addEventListener('click', () => {
-    searchKey.focus();
 
-    searchNews();
-});
 
 searchKey.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
