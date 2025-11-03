@@ -98,4 +98,7 @@ tabs.forEach(tab => {
 
  buttonAbout.addEventListener('click' , ()=>{
     window.location.href = 'About.html'
- })
+ });
+ buttonHome.addEventListener('click' , ()=>{
+    window.location.href = 'index.html'
+ });
