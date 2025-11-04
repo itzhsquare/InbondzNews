@@ -53,7 +53,7 @@ function searchNews() {
 
             if (found) {
                 
-                window.location.href = `https://news.inbondz.com/news/${matchedItem.news}.html`;
+                window.location.href = `https://news.inbondz.com/news/${matchedItem.news}`;
 
             }
             else {
