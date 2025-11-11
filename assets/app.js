@@ -6,7 +6,7 @@ const buttonSearch = document.getElementById('button-search');
 const buttonHome = document.getElementById('button-home');
 const buttonTc = document.getElementById('button-tc');
 const buttonAbout = document.getElementById('button-about');
-
+const buttonPP = document.getElementById ("button-pp");
 
 
 
@@ -102,3 +102,6 @@ tabs.forEach(tab => {
  buttonHome.addEventListener('click' , ()=>{
     window.location.href = 'index.html'
  });
+buttonPP.addEventListener ('click' , ()=> {
+    window.location.href = 'privacy-policy.html'
+});
