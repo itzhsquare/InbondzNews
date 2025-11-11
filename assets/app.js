@@ -6,7 +6,7 @@ const buttonSearch = document.getElementById('button-search');
 const buttonHome = document.getElementById('button-home');
 const buttonTc = document.getElementById('button-tc');
 const buttonAbout = document.getElementById('button-about');
-const buttonPP = document.getElementById ("button-pp");
+const buttonPP = document.getElementById("button-pp");
 
 
 
@@ -52,7 +52,7 @@ function searchNews() {
 
 
             if (found) {
-                
+
                 window.location.href = `https://news.inbondz.com/${matchedItem.news}`;
 
             }
@@ -96,12 +96,15 @@ tabs.forEach(tab => {
 
 });
 
- buttonAbout.addEventListener('click' , ()=>{
+buttonAbout.addEventListener('click', () => {
     window.location.href = 'about.html'
- });
- buttonHome.addEventListener('click' , ()=>{
+});
+buttonHome.addEventListener('click', () => {
     window.location.href = 'index.html'
- });
-buttonPP.addEventListener ('click' , ()=> {
+});
+buttonPP.addEventListener('click', () => {
     window.location.href = 'privacy-policy.html'
+});
+buttonTc.addEventListener('click', () => {
+    window.location.href = 't&c.html'
 });
